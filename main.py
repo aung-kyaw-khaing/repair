@@ -10,6 +10,10 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/unitozawgyi")
+def unitozawgyi():
+    return render_template("unitozawgyi.html")
+
 @app.route("/convert", methods=["POST"])
 def convert():
     myinput = request.form['myinput']
@@ -87,9 +91,9 @@ def convert5():
         return jsonify({'output': output})
     return jsonify({'output': "Plz write or paste text in input textarea"})
 
-@app.route("/firstpages")
-def firstpage():
-    return render_template("firstpage.html")
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
