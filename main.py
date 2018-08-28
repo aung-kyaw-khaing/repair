@@ -21,7 +21,7 @@ def convert():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': "No input text!"})
 
 @app.route("/zawgyitouni")
 def zawgyitouni():
@@ -34,7 +34,7 @@ def convert1():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': "No input text!"})
 
 @app.route("/wintouni")
 def wintouni():
@@ -47,7 +47,7 @@ def convert2():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': "No input text!"})
 
 @app.route("/unitowin")
 def unitowin():
@@ -60,7 +60,7 @@ def convert3():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': ""})
 
 
 @app.route("/wintozawgyi")
@@ -75,7 +75,7 @@ def convert4():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': "No input text!"})
 
 @app.route("/zawgyitowin")
 def zawgyitowin():
@@ -89,7 +89,7 @@ def convert5():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': ""})
 
 @app.route("/about")
 def about():
